@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="app.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="playersName">
+      <input
+        type="text"
+        id="players"
+        class="player1"
+        placeholder="Player 1"
+        maxlength="10"
+      />
+      <input
+        type="text"
+        id="players"
+        class="player2"
+        placeholder="Player 2"
+        maxlength="10"
+      />
+
+      <input type="button" id="button" value="Submit" />
+    </div>
+
+    <section class="game">
+      <h1>Tic Tac Toe</h1>
+
+      <div class="container">
+        <article>
+          <div class="names">
+            <p class="outputP1" id="outputPlayer1"></p>
+          </div>
+          <div class="score">
+            <p class="scoreP1" id="scorePlayer1">0</p>
+          </div>
+        </article>
+
+        <article>
+          <div class="winningMessage"></div>
+          <div class="board">
+            <div class="boardCell" id="0" data-cell></div>
+            <div class="boardCell" id="1" data-cell></div>
+            <div class="boardCell" id="2" data-cell></div>
+            <div class="boardCell" id="3" data-cell></div>
+            <div class="boardCell" id="4" data-cell></div>
+            <div class="boardCell" id="5" data-cell></div>
+            <div class="boardCell" id="6" data-cell></div>
+            <div class="boardCell" id="7" data-cell></div>
+            <div class="boardCell" id="8" data-cell></div>
+          </div>
+        </article>
+
+        <article>
+          <div class="names">
+            <p class="outputP2" id="outputPlayer2"></p>
+          </div>
+          <div class="score">
+            <p class="scoreP2" id="scorePlayer2">0</p>
+          </div>
+        </article>
+
+        <h2 class="playerText"></h2>
+      </div>
+    </section>
+
+    <button id="restartButton">Restart</button>
+  </body>
+</html>

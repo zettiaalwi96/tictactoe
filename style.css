@@ -1,0 +1,151 @@
+/* Submit and display players name */
+.playersName {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(115, 110, 110, 0.9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#players {
+  font-size: 3rem;
+  font-family: "Permanent Marker", cursive;
+  margin-top: 2px;
+  margin-bottom: 50px;
+}
+
+#button {
+  font-size: 20px;
+  color: white;
+  background-color: blueviolet;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+/* Container 3x grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+}
+
+.scoreP1 {
+
+  font-size: 80px;
+  font-family: "Permanent Marker", cursive;
+}
+
+.scoreP2 {
+  font-size: 80px;
+  font-family: "Permanent Marker", cursive;
+}
+
+/* Centering the text */
+h1 {
+  text-align: center;
+  text-decoration: solid;
+  font-size: 90px;
+  font-family: "Patrick Hand SC", cursive;
+  color: rgb(197, 156, 235);
+}
+
+.playerText {
+  text-align: center;
+  text-decoration: solid;
+  font-size: 40px;
+  font-family: "Patrick Hand SC", cursive;
+  color: rgb(197, 156, 235);
+}
+
+p {
+  text-align: center;
+  text-decoration: solid;
+  font-size: 80px;
+  font-family: "Patrick Hand SC", cursive;
+  color: rgb(176, 120, 228);
+}
+
+body {
+  background-color: black;
+  text-align: center;
+}
+
+/* Creating a 3x3 cell */
+.boardCell {
+  width: 150px;
+  height: 150px;
+  border: 2px solid blueviolet;
+  cursor: pointer;
+  font-size: 100px;
+  text-align: center;
+  font-family: "Patrick Hand SC", cursive;
+  color: rgb(176, 120, 228);
+}
+
+.board {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, auto);
+}
+
+.boardCell:first-child,
+.boardCell:nth-child(2),
+.boardCell:nth-child(3) {
+  border-top: none;
+}
+
+.boardCell:nth-child(3n + 1) {
+  border-left: none;
+}
+
+.boardCell:nth-child(3n + 3) {
+  border-right: none;
+}
+
+.boardCell:last-child,
+.boardCell:nth-child(8),
+.boardCell:nth-child(7) {
+  border-bottom: none;
+}
+
+/* Showing result */
+.winningMessage {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgba(115, 110, 110, 0.9);
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  text-decoration: solid;
+  font-size: 60px;
+  font-family: "Patrick Hand SC", cursive;
+  color: rgb(197, 156, 235);
+}
+
+/* Styling the restart button */
+button {
+  background-color: blueviolet;
+  font-size: 20px;
+  color: azure;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-color: blueviolet;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translate(2px);
+}
